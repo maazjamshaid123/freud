@@ -1,5 +1,6 @@
 import streamlit as st
 import pyttsx3
+import os
 from freud import CustomChatGPT
 
 st.set_page_config(page_title='Freud', layout="wide", page_icon="Freud.png", menu_items={
