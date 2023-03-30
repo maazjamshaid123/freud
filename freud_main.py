@@ -21,7 +21,11 @@ user_input = st.text_input("Give me a detailed description about your dream: ")
 
 if st.button("Ask Freud"):
     response = CustomChatGPT(user_input)
-    st.text_area("Freud:", value=response, height=200, max_chars=None, key=None)
+    st.text_area("Patient:", value=response, height=200, max_chars=None, key=None)
+
+    # Set the LD_LIBRARY_PATH variable to the directory containing the libespeak.so.1 file
+    espeak_path = "/usr/lib/x86_64-linux-gnu"
+    os.environ["LD_LIBRARY_PATH"] = espeak_path
 
     # Initialize pyttsx3 TTS engine
     engine = pyttsx3.init()
