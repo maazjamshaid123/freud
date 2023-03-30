@@ -12,7 +12,7 @@ st.markdown("---")
 col1, col2, col3 = st.columns(3)
 with col2:
     st.image('Freud.png')
-    st.write("by [Maaz Jamshaid](https://www.linkedin.com/in/maazjamshaid/)")
+    st.text("by [Maaz Jamshaid](https://www.linkedin.com/in/maazjamshaid/)")
 
 st.markdown("---")
 
