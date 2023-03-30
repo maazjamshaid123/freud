@@ -13,8 +13,6 @@ col1, col2, col3 = st.columns(3)
 with col2:
     st.image('Freud.png')
 
-st.text("by [Maaz Jamshaid](https://www.linkedin.com/in/maazjamshaid/)")
-
 st.markdown("---")
 
 user_input = st.text_input("Give me a detailed description about your dream: ")
